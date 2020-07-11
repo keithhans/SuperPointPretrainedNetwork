@@ -1,5 +1,23 @@
 <img src="assets/magicleap.png" width="240">
 
+# Notes by Keith
+## Changes
+* demo_superpoint_onnx.py: convert the pretrained model to onnx and run inference on onnx
+* demo_superpoint_coreml.py: convert the pretrained model to coreml and run inference on coreml
+
+## Some interesting findings:
+In terms of inference speed, pytorch < onnx < coreml on my macbook air(13-inch, Early 2015).
+
+pytorch: < 2fps
+onnx: ~5fps
+coreml: ~9fps
+
+# commands:
+./demo_superpoint.py --W 320 --H 240 --show_extra camera
+./demo_superpoint_onnx.py --W 320 --H 240 --show_extra camera
+./demo_superpoint_coreml.py --W 320 --H 240 --show_extra camera
+
+
 ### Research @ Magic Leap
 
 # SuperPoint Weights File and Demo Script
