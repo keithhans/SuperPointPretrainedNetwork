@@ -8,15 +8,16 @@
 ## Some interesting findings:
 In terms of inference speed, pytorch < onnx < coreml on my macbook air(13-inch, Early 2015).
 
-pytorch: < 2fps
-onnx: ~5fps
-coreml: ~9fps
+* pytorch: < 2fps
+* onnx: ~5fps
+* coreml: ~9fps
 
-# commands:
+# Commands:
+```sh
 ./demo_superpoint.py --W 320 --H 240 --show_extra camera
 ./demo_superpoint_onnx.py --W 320 --H 240 --show_extra camera
 ./demo_superpoint_coreml.py --W 320 --H 240 --show_extra camera
-
+```
 
 ### Research @ Magic Leap
 
