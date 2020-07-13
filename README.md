@@ -19,6 +19,13 @@ In terms of inference speed, pytorch < onnx < coreml on my macbook air(13-inch, 
 ./demo_superpoint_coreml.py --W 320 --H 240 --show_extra camera
 ```
 
+# Notes:
+On windows, i ran into errors: "Cannot load onnxruntime.capi. Error: 'DLL load failed'".  
+This seems to be with onnxruntime 1.3.0.  fix:
+```sh
+pip install onnxruntime==1.2.0
+```
+
 ### Research @ Magic Leap
 
 # SuperPoint Weights File and Demo Script
